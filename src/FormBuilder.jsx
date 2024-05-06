@@ -106,7 +106,7 @@ const FormBuilder = () => {
             <option value="address">Address</option>
             <option value="gender">Gender</option>
             <option value="date">Date</option>
-            <option value="checkbox">Checkbox</option>
+            <option value="checkbox">Checkbox</option> 
           </select>
           <button onClick={handleAddField}>Add Field</button>
         </div>
@@ -143,7 +143,7 @@ const FormBuilder = () => {
         </form>
       </div>
       <form onSubmit={handleSubmit}>
-        <button type="submit">Create Form</button>
+        <button type="submit">Save Form</button>
       </form>
       <div>
         <h3>Saved Forms</h3>
