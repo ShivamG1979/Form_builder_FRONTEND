@@ -91,7 +91,7 @@ const FormBuilder = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:1000/api/forms', {
+      const response = await fetch('https://form-builder-backend-igjn.onrender.com/api/forms', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ const FormBuilder = () => {
 
   const fetchForms = async () => {
     try {
-      const response = await fetch('http://localhost:1000/api/forms');
+      const response = await fetch('https://form-builder-backend-igjn.onrender.com/api/forms');
       if (response.ok) {
         const formData = await response.json();
         setSavedForms(formData);
@@ -127,7 +127,7 @@ const FormBuilder = () => {
 
   const handleDeleteForm = async (id) => {
     try {
-      const response = await fetch(`http://localhost:1000/api/forms/${id}`, {
+      const response = await fetch(`https://form-builder-backend-igjn.onrender.com/api/forms/${id}`, {
         method: 'DELETE',
       });
       if (response.ok) {
